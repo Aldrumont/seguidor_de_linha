@@ -6,16 +6,6 @@ import argparse
 import sys
 import logging
 
-logging.basicConfig(filename="test.log", level=logging.INFO, format='%(asctime)s - %(message)s')
-# logger = logging.basicConfig()
-
-parser = ConfigParser()
-parser.read('config.ini')
-model = load_model(parser.get("modelos","modelo_h5"))
-
-logging.debug('LEU TUDO')
-
-
 def main():
     argumentos = argparse.ArgumentParser()
     argumentos.add_argument('--img_path', help='caminho imagem')
@@ -42,4 +32,12 @@ def predict_img(args):
 
 
 if __name__ == '__main__':
+    logging.basicConfig(filename="test.log", level=logging.INFO, format='%(asctime)s - %(message)s')
+    # logger = logging.basicConfig()
+
+    parser = ConfigParser()
+    parser.read('config.ini')
+    model = load_model(parser.get("modelos","modelo_h5"))
+
+    logging.debug('LEU TUDO')
     main()
