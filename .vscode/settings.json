@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/home/junior/anaconda3/envs/alpr/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.pylamaEnabled": true,
+    "python.linting.enabled": true
+}
