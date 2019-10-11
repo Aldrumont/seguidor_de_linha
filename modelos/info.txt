@@ -1,0 +1,2 @@
+ input_names = ['conv2d_1_input'] (1, 480, 640, 1)
+ output_names = ['dense_3/Softmax']
